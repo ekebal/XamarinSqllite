@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>9058e26a-7e57-42dc-ad78-b8bdd7967155</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XamarinSqlLight</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Database\AlertDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\BankDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\ConctactDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\ContactTypeDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\CrudDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\MedicamentDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\MedicamentHistoryDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\NotificationSmsDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\UserDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modele\Alert.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modele\Bank.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modele\Contact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modele\ContactType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modele\ITable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modele\Medicament.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modele\MedicamentHistory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modele\NotificationSms.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Modele\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\ContactPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ContactPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ShowContactPage.xaml.cs">
+      <DependentUpon>ShowContactPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)GettingStarted.Xamarin" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ContactPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ShowContactPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
