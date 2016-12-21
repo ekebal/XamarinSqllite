@@ -5,7 +5,7 @@ using XamarinSqlLight.Modele;
 
 namespace XamarinSqlLight.Database
 {
-    class AlertDatabase: CrudDatabase
+    public class AlertDatabase: CrudDatabase
     {
 
         protected override void initDababase()

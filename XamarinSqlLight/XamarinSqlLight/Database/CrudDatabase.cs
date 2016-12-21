@@ -6,7 +6,7 @@ using XamarinSqlLight.Modele;
 
 namespace XamarinSqlLight.Database
 {
-    abstract class CrudDatabase
+    public abstract class CrudDatabase
     {
 
         public SQLiteConnection Connection { get; }

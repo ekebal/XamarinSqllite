@@ -5,7 +5,7 @@ using XamarinSqlLight.Modele;
 
 namespace XamarinSqlLight.Database
 {
-    class ContactTypeDatabase : CrudDatabase
+   public  class ContactTypeDatabase : CrudDatabase
     {
         protected override void initDababase()
         {

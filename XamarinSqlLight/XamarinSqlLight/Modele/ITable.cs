@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XamarinSqlLight.Modele
 {
-    interface ITable
+   public interface ITable
     { 
         int ID { get; set; }
        

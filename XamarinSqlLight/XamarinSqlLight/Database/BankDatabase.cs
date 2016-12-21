@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XamarinSqlLight.Database
 {
-    class BankDatabase
+    public class BankDatabase
     {
     }
 }
